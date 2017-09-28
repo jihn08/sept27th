@@ -1,0 +1,86 @@
+
+# coding: utf-8
+
+# In[5]:
+
+from pandas import DataFrame, read_csv
+import matplotlib.pyplot as plt
+import pandas as pd
+import sys
+import matplotlib 
+
+
+# In[10]:
+
+print('python version' + sys.version)
+print ('pandas ver' + pd.__version__)
+print ('matplotlib ver' + matplotlib.__version__)
+
+names = ['Goku','Vegeta','Gohan','picoro','Ten Shin Han']
+birth = [90,55,82,23,45]
+
+
+# In[14]:
+
+BabyDataSet = list (zip(names,birth))
+
+
+# In[15]:
+
+BabyDataSet
+
+
+# In[19]:
+
+df = pd.DataFrame(data=BabyDataSet,columns = ['Names','Birth'])
+df
+
+
+# In[20]:
+
+df
+
+
+# In[29]:
+
+df.to_csv('birthsfile.csv', index = False, header = False)
+
+
+# In[40]:
+
+location = r'/home/b107-07/birthsfile.csv' #asignar la localizacion
+
+
+# In[42]:
+
+df = pd.read_csv(location) 
+df
+
+
+# In[49]:
+
+df.dtypes
+
+
+# In[ ]:
+
+
+
+
+# In[48]:
+
+import os
+os.remove(location)
+
+
+# In[ ]:
+
+
+
+
+# In[90]:
+
+plt.annotate(Text,xy=(1,MaxV---->alue), xytext=(8,0), xycords = ('axes fraction', 'data'), textcoords = 'offset points')
+print("The Most Popular Name")
+
+
